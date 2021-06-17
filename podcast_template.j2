@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>{{title}}</title>
+</head>
+<body>
+
+<h1>{{title}}</h1>
+<p>
+{{description}}
+</p>
+
+<table>
+
+{% for result in subtitles_list %}
+<tr>
+    <td><a href=https://youtu.be/{{code}}?t={{result.sec}}>{{result.time}}</a></td>
+    <td>{{result.text}}</td>
+</tr>
+{% endfor %}
+</table>
+
+</body>
+</html>
